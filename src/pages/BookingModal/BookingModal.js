@@ -26,7 +26,7 @@ const BookingModal = ({ treatment, setTreatment }) => {
             phone
         }
 
-        fetch(`https://assignment-12-server-seven-chi.vercel.app/bookings`, {
+        fetch(`https://assignment-12-server-shaionhazari1.vercel.app/bookings`, {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

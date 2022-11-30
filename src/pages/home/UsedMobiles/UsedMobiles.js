@@ -13,7 +13,7 @@ const UsedMobiles = () => {
     const {data: usedMobiles = [], isLoading} = useQuery({
         queryKey: ['usedMobiles'],
         queryFn: async () => {
-            const res = await fetch(`https://assignment-12-server-seven-chi.vercel.app/allItems`);
+            const res = await fetch(`https://assignment-12-server-shaionhazari1.vercel.app/allItems`);
             const data = await res.json();
             return data;
         }
@@ -26,7 +26,7 @@ const UsedMobiles = () => {
         }
 
     // useEffect(() => {
-    //     fetch(`https://assignment-12-server-seven-chi.vercel.app/allItems`)
+    //     fetch(`https://assignment-12-server-shaionhazari1.vercel.app/allItems`)
     //         .then(res => res.json())
     //         .then(data => setUsedMobiles(data))
     // }, [])
