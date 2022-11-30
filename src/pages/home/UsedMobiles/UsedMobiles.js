@@ -13,7 +13,7 @@ const UsedMobiles = () => {
     const {data: usedMobiles = [], isLoading} = useQuery({
         queryKey: ['usedMobiles'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/allItems`);
+            const res = await fetch(`https://assignment-12-server-seven-chi.vercel.app/allItems`);
             const data = await res.json();
             return data;
         }
@@ -26,7 +26,7 @@ const UsedMobiles = () => {
         }
 
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/allItems`)
+    //     fetch(`https://assignment-12-server-seven-chi.vercel.app/allItems`)
     //         .then(res => res.json())
     //         .then(data => setUsedMobiles(data))
     // }, [])
